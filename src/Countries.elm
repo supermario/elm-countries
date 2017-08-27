@@ -57,7 +57,7 @@ search searchString =
         )
 
 
-{-| The full list of all 294 current [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) Country records.
+{-| The full list of all 249 current [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) Country records.
 -}
 all : List Country
 all =

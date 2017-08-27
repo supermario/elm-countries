@@ -1,12 +1,14 @@
 {
-    "version": "1.0.0",
+    "version": "1.0.1",
     "summary": "A searchable ISO 3166-1 based list of country names, codes and emoji flags",
     "repository": "https://github.com/supermario/elm-countries.git",
     "license": "BSD3",
     "source-directories": [
         "./src"
     ],
-    "exposed-modules": ["Countries"],
+    "exposed-modules": [
+        "Countries"
+    ],
     "dependencies": {
         "elm-lang/core": "5.1.1 <= v < 6.0.0"
     },

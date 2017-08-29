@@ -19,3 +19,5 @@ There's an example with a country picker in the `example` directory.
 cd example
 elm-reactor
 ```
+
+**Note** You **must** run `elm-reactor` from within the `example` directory to use the correct package dependencies.

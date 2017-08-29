@@ -4,6 +4,13 @@ module Countries exposing (Country, all, search, fromCode)
 
 The library is intended to be used qualified (i.e. `Countries.search`, `Countries.all`).
 
+```
+> import Countries
+> Countries.fromCode "AU"
+Just { name = "Australia", code = "AU", flag = "🇦🇺" }
+    : Maybe.Maybe Countries.Country
+```
+
 See the `examples` folder for a basic country picker example.
 
 # Types
@@ -23,7 +30,7 @@ See the `examples` folder for a basic country picker example.
 - code: [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) two-letter Country code
 - flag: The Country's unicode emoji flag, see [Regional Indicator Symbol](https://en.wikipedia.org/wiki/Regional_Indicator_Symbol)
 
-This type is left intentionally opaque, as accessing the countries reference data as easily as possible is the primary goal.
+This type is intentionally not opaque, as accessing the countries reference data as easily as possible is the primary goal.
 -}
 type alias Country =
   { name : String, code : String, flag : String }

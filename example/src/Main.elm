@@ -1,5 +1,6 @@
 module Main exposing (main)
 
+import Browser
 import Html exposing (..)
 import Html.Attributes exposing (..)
 import Html.Events exposing (..)
@@ -17,19 +18,19 @@ type Msg
   | UpdatePrefix String
 
 
-model : Model
-model =
+init : Model
+init =
   { searchString = ""
   , selectedCountry = Nothing
   }
 
 
-main : Program Never Model Msg
+main : Program () Model Msg
 main =
-  Html.beginnerProgram
-    { update = update
+  Browser.sandbox
+    { init = init
+    , update = update
     , view = view
-    , model = model
     }
 
 

@@ -1,4 +1,8 @@
-module Countries exposing (Country, all, fromCode, search)
+module Countries exposing
+    ( Country
+    , fromCode, search
+    , all
+    )
 
 {-| A searchable [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) based list of country names, codes and emoji flags.
 
@@ -48,6 +52,7 @@ fromCode : String -> Maybe Country
 fromCode code =
     if String.length code /= 2 then
         Nothing
+
     else
         all
             |> List.filter

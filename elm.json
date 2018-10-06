@@ -1,7 +1,7 @@
 {
     "name": "eskimoblood/elm-countries",
     "type": "package",
-    "version": "2.0.0",
+    "version": "1.0.0",
     "summary": "A searchable ISO 3166-1 based list of country names, codes and emoji flags",
     "repository": "https://github.com/supermario/elm-countries.git",
     "license": "BSD-3-Clause",

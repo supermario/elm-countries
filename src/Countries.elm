@@ -291,7 +291,7 @@ all =
     , ( "El Salvador", "SV", "🇸🇻" )
     , ( "Sint Maarten (Dutch part", "SX", "🇸🇽" )
     , ( "Syrian Arab Republic", "SY", "🇸🇾" )
-    , ( "Swaziland", "SZ", "🇸🇿" )
+    , ( "Eswatini", "SZ", "🇸🇿" )
     , ( "Turks and Caicos Islands", "TC", "🇹🇨" )
     , ( "Chad", "TD", "🇹🇩" )
     , ( "French Southern Territories", "TF", "🇹🇫" )

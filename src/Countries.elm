@@ -222,7 +222,7 @@ all =
     , ( "Saint Martin (French part)", "MF", "🇲🇫" )
     , ( "Madagascar", "MG", "🇲🇬" )
     , ( "Marshall Islands", "MH", "🇲🇭" )
-    , ( "Macedonia (the former Yugoslav Republic of)", "MK", "🇲🇰" )
+    , ( "North Macedonia", "MK", "🇲🇰" )
     , ( "Mali", "ML", "🇲🇱" )
     , ( "Myanmar", "MM", "🇲🇲" )
     , ( "Mongolia", "MN", "🇲🇳" )

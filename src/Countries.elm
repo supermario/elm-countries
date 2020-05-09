@@ -308,7 +308,7 @@ all =
     , ( "Turkey", "TR", "🇹🇷" )
     , ( "Trinidad and Tobago", "TT", "🇹🇹" )
     , ( "Tuvalu", "TV", "🇹🇻" )
-    , ( "Taiwan, Province of China", "TW", "🇹🇼" )
+    , ( "Taiwan", "TW", "🇹🇼" )
     , ( "Tanzania, United Republic of", "TZ", "🇹🇿" )
     , ( "Ukraine", "UA", "🇺🇦" )
     , ( "Uganda", "UG", "🇺🇬" )

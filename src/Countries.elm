@@ -325,6 +325,7 @@ all =
     , ( "Vanuatu", "VU", "🇻🇺" )
     , ( "Wallis and Futuna", "WF", "🇼🇫" )
     , ( "Samoa", "WS", "🇼🇸" )
+    , ( "Kosovo", "XK", "🇽🇰")
     , ( "Yemen", "YE", "🇾🇪" )
     , ( "Mayotte", "YT", "🇾🇹" )
     , ( "South Africa", "ZA", "🇿🇦" )

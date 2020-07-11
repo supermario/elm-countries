@@ -1,6 +1,6 @@
 module Countries exposing
     ( Country
-    , fromCode, search
+    , fromCode, fromCodeCustom, search, searchCustom
     , all
     )
 
@@ -25,7 +25,7 @@ Note: [Country names do change](https://github.com/supermario/elm-countries/comm
 
 # Common helpers
 
-@docs fromCode, search
+@docs fromCode, fromCodeCustom, search, searchCustom
 
 
 # Data set
@@ -52,11 +52,18 @@ type alias Country =
 -}
 fromCode : String -> Maybe Country
 fromCode code =
+    fromCodeCustom all code
+
+
+{-| Find a country by its [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) two-letter country code, using a custom Countries list
+-}
+fromCodeCustom : List Country -> String -> Maybe Country
+fromCodeCustom countries code =
     if String.length code /= 2 then
         Nothing
 
     else
-        all
+        countries
             |> List.filter
                 (\country ->
                     country.code == code
@@ -68,7 +75,14 @@ fromCode code =
 -}
 search : String -> List Country
 search searchString =
-    all
+    searchCustom all searchString
+
+
+{-| Search a custom Countries list by case-insensitive string matching on name and code
+-}
+searchCustom : List Country -> String -> List Country
+searchCustom countries searchString =
+    countries
         |> List.filter
             (\country ->
                 String.contains

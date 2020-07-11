@@ -66,7 +66,7 @@ view model =
 viewCountryList : String -> Html Msg
 viewCountryList searchString =
     div [] <|
-        List.map viewCountry (Countries.search searchString)
+        List.map viewCountry (Countries.searchCustom renamedCountries searchString)
 
 
 viewCountry : Country -> Html Msg
@@ -74,3 +74,24 @@ viewCountry country =
     div
         [ onClick <| SelectCountry country ]
         [ text <| country.flag ++ " " ++ country.name ++ " " ++ "(" ++ country.code ++ ")" ]
+
+
+{-| Example: add the famous Pirate Island, Isla de Muerta
+-}
+countries =
+    Countries.all
+        |> List.append [ { name = "Isla de Muerta", code = "XX", flag = "🏴\u{200D}☠️" } ]
+
+
+{-| Example: rename a particular country
+-}
+renamedCountries =
+    countries
+        |> List.map
+            (\country ->
+                if country.name == "Isla de Muerta" then
+                    { country | name = "Island of the Dead" }
+
+                else
+                    country
+            )

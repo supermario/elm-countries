@@ -3,7 +3,7 @@
     "name": "supermario/elm-countries",
     "summary": "A searchable ISO 3166-1 based list of country names, codes and emoji flags",
     "license": "BSD-3-Clause",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "exposed-modules": [
         "Countries"
     ],

@@ -87,7 +87,7 @@ searchCustom countries searchString =
             (\country ->
                 String.contains
                     (String.toLower searchString)
-                    (String.toLower <| country.name ++ country.code)
+                    (String.toLower <| country.name ++ " " ++ country.code)
             )
 
 
